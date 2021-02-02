@@ -1,0 +1,52 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body.back {
+    background-image: url(../img/wall.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    color: white;
+    padding: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+list a {
+    text-decoration: none;
+}
+
+div.main {
+    width: 50%;
+    height: 100%;
+    /* text-align: center; */
+    margin: auto;
+    padding-left: 25%;
+}
+
+#list-labs {
+    width: 70%;
+    margin: auto;
+}
+
+#list-labs p {
+    margin-bottom: 25px;
+    font-size: 18px;
+    position: relative;
+    transition: all 0.2s;
+}
+
+#list-labs p:hover {
+    text-indent: 10px;
+    margin-bottom: 23px;
+    font-size: 20px;
+    text-shadow: 0 0 15px white;
+    /* margin-top: 13px; */
+    /* margin-top: 19px; */
+}
