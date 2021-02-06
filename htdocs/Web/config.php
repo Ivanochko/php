@@ -1,12 +1,15 @@
 <?php
 $config['charset'] = 'utf-8';
 $config['default_lng'] = 'ua';
+date_default_timezone_set('Europe/Kiev');
+
 $config['host_name'] = 'http://93.184.216.34/htdocs/Web/';
 // $config['hot_name'] = 'http://ivanochko.ezyro.com/Web';
 
 $config_host_name=$config['host_name'];
 
 $config['data_dir'] = '/htdocs/Web';
+
 
 // $config{'dbName'} = "bz";
 // $config{'dbHost'} = "localhost";
@@ -24,20 +27,23 @@ $LastModified_unix = strtotime(date("D, d M Y H:i:s", filectime($_SERVER['SCRIPT
 $LastModified = gmdate("D, d M Y H:i:s \G\M\T", $LastModified_unix); 
 echo "Last modified: $LastModified"."<br>";
 ?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-   <!-- <title>Побудова бази знань</title> -->
+    <title>Програмування мовою РНР</title>
+    <!-- Headers -->
     <meta name='keywords' content=''/>
     <meta name='description' content=''/>
     <meta http-equiv='Content-Type' content='text/html' charset='utf-8'>
 
-<link rel='stylesheet' href='/Proga/create_bz/css/style.css' type='text/css' media='screen, projection'/>
+<!-- <link rel='stylesheet' href='/Proga/create_bz/css/style.css' type='text/css' media='screen, projection'/> -->
 
+<!-- Styles -->
+<link rel="stylesheet" href="css/style.css" type="text/css">
+
+<!-- Scripts -->
 <script type='text/javascript' src='/Proga/Web/js/jquery-1.9.1.min.js'></script>
 <script type='text/javascript' src='/Proga/Web/js/my.js'></script>
-<!-- 1 -->
-<!-- 1234 -->
-
 
 </head>
