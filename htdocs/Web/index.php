@@ -8,13 +8,18 @@
 
 <body class="back">
     <div class="main">
-        <br> 
+        <br>
         <h1 class="header">Програмування мовою РНР</h1>
         <div id="list-labs">
             <?php
             for ($i = 1; $i < 6; $i++) {
-                echo "<p><a href=\"lab$i/lab$i.php\">Лабораторна #$i</a></p>";
+                echo "<p><a href=\"lab$i/ivanochko_lab$i.php\">Лабораторна #$i</a></p>";
             } ?>
+            <?php
+$ip = gethostbyname('www.example.com');
+
+echo $ip;
+?>
         </div>
         <?php require("config.php"); ?>
     </div>

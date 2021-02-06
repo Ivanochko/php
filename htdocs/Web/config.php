@@ -1,9 +1,12 @@
 <?php
-// $config{'charset'} = 'utf-8';
-// $config{'default_lng'} = 'ua';
-#$config{'host_name'} = 'http://194.44.155.2/Proga/Web';
-// $config_host_name=$config{'host_name'};
-// $config{'data_dir'} = '/var/www/Proga/Web';
+$config['charset'] = 'utf-8';
+$config['default_lng'] = 'ua';
+$config['host_name'] = 'http://93.184.216.34/htdocs/Web/';
+// $config['hot_name'] = 'http://ivanochko.ezyro.com/Web';
+
+$config_host_name=$config['host_name'];
+
+$config['data_dir'] = '/htdocs/Web';
 
 // $config{'dbName'} = "bz";
 // $config{'dbHost'} = "localhost";
@@ -11,13 +14,11 @@
 // $config{'dbUser'} = "postgres";
 // $config{'dbPasswd'} = "postgres";
 
-// $config{'LogInFor'} = 3600;
-// $config{'dom_name'} = 'bz';
-// $config{'sess_name'} = 'SPRITE_SESS_ID';
-
-// $config{'default_theme'} = 'black-style';
-
-// $config{'email'} = 'kit@pu.if.ua';
+$config['LogInFor'] = 3600;
+$config['dom_name'] = 'bz';
+$config['sess_name'] = 'SPRITE_SESS_ID';
+$config['default_theme'] = 'black-style';
+$config['email'] = 'vasa.ivanochko.17@gmail.com';
 
 $LastModified_unix = strtotime(date("D, d M Y H:i:s", filectime($_SERVER['SCRIPT_FILENAME']))); 
 $LastModified = gmdate("D, d M Y H:i:s \G\M\T", $LastModified_unix); 

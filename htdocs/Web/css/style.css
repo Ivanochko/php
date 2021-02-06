@@ -1,5 +1,6 @@
 @font-face {
     font-family: "Gotic header";
+    src: url("../fonts/gotic1.otf") format("otf");
 }
 
 html,
