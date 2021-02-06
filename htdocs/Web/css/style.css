@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Gotic header";
-    src: url("../fonts/gotic1.otf") format("otf");
+    src: url("../fonts/gotic4.otf");
 }
 
 html,
@@ -9,7 +9,7 @@ body {
     padding: 0;
 }
 
-body.back {
+body {
     background-image: url(../img/wall.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -23,10 +23,6 @@ a {
     color: inherit;
 }
 
-list a {
-    text-decoration: none;
-}
-
 div.main {
     width: 50%;
     height: 100%;
@@ -36,23 +32,25 @@ div.main {
 }
 
 .header {
-    font-size: 30px;
+    font-size: 35px;
     font-family: "Gotic header";
 }
 
-#list-labs {
-    width: 70%;
-    margin: auto;
+.list-labs {
+    width: 50%;
+    /* margin: auto; */
+    text-align: center;
+    /* background: red; */
 }
 
-#list-labs p {
+.list-labs p {
     margin-bottom: 25px;
     font-size: 18px;
     position: relative;
     transition: all 0.2s;
 }
 
-#list-labs p:hover {
+.list-labs p:hover {
     text-indent: 10px;
     margin-bottom: 23px;
     font-size: 20px;

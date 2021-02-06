@@ -1,13 +1,30 @@
-<?php
+<html>
+
+<head>
+</head>
+
+<body>
+    <div class="main">
+        <h1 class="header">Лабораторна робота #1</h1>
+        <div class="list-labs">
+            <?php
+            $array = array(
+                "Доступ до змінних форми", "Оператор if..elseif..else",
+                "Оператор switch", "Цикл while",
+                "Цикли while", "Цикли do...while"
+            );
+            for ($i = 1; $i < 7; $i++) {
+                echo "<p><a href=\"ivanochko_example_1_1_$i.php\">Приклад ".$array[$i-1]."</a></p>";
+            }
 
 
-require("../config.php");
-//include_once("../db.php");
-include_once("../function.php");
-// header("Content-Type: text/html; charset=".$config{'charset'});
-if (!empty($_GET["zm"])) {echo "Ім'я переданої змінної ".$_GET["zm"];} else {echo "zminna not fount";}
-$zm=$_GET["zm"];
 
-echo "<a href=example1_1_5_1.php><H1> <p>1.1.5_1 Доступ до змінних форми post</p></H1></a>";
-echo "<a href=example1_1_5_2.php><H1> <p>1.1.5_2 Доступ до змінних форми get</p></H1></a>";
-?>
+            ?>
+            <?php require("../config.php"); ?>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
