@@ -35,8 +35,8 @@ echo "Last modified: $LastModified"."<br>";
 
 <script type='text/javascript' src='/Proga/Web/js/jquery-1.9.1.min.js'></script>
 <script type='text/javascript' src='/Proga/Web/js/my.js'></script>
-
-
+<!-- 1 -->
+<!-- 1234 -->
 
 
 </head>

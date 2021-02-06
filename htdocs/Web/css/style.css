@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "Gotic header";
+}
+
 html,
 body {
     margin: 0;
@@ -30,6 +34,10 @@ div.main {
     padding-left: 25%;
 }
 
+.header {
+    font-size: 30px;
+}
+
 #list-labs {
     width: 70%;
     margin: auto;
@@ -47,6 +55,4 @@ div.main {
     margin-bottom: 23px;
     font-size: 20px;
     text-shadow: 0 0 15px white;
-    /* margin-top: 13px; */
-    /* margin-top: 19px; */
 }
