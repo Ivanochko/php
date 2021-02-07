@@ -5,6 +5,7 @@
 <head>
     <!-- <meta charset="utf-8"> -->
     <!-- <title>Програмування мовою РНР</title> -->
+    <?php require("config.php") ?>
 </head>
 
 <body>
@@ -16,7 +17,7 @@
             for ($i = 1; $i < 6; $i++) {
                 echo "<p><a href=\"lab$i/ivanochko_lab$i.php\">Лабораторна #$i</a></p>";
             } ?>
-        <?php require("config.php"); ?>
+        <?php require("last_modifiend.php"); ?>
         </div>
     </div>
 </body>
