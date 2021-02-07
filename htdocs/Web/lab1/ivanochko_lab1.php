@@ -5,6 +5,7 @@
 
 <body>
     <div class="main">
+        <br>
         <h1 class="header">Лабораторна робота #1</h1>
         <div class="list-labs">
             <?php
@@ -14,12 +15,10 @@
                 "Цикли while", "Цикли do...while"
             );
             for ($i = 1; $i < 7; $i++) {
-                echo "<p><a href=\"ivanochko_example_1_1_$i.php\">Приклад ".$array[$i-1]."</a></p>";
+                echo "<p><a href=\"ivanochko_lab1_example_$i.php\">Приклад ".$array[$i-1]."</a></p>";
             }
-
-
-
             ?>
+            <p><a href="../">Назад</a></p>
             <?php require("../config.php"); ?>
         </div>
     </div>
