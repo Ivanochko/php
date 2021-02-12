@@ -8,8 +8,9 @@
 
 <body class="body">
     <div class="main">
+        <br>
         <h2 class="header">Оператор switch</h2>
-        <form action="ivanochko_lab1_example_2.php" method="post" id="form-second-example" class="form-example">
+        <form action="ivanochko_lab1_example_2.php" method="post" class="form-example form-sixth-example" >
             Day of week: <br>
             <div id="day-of-week-block">
                 <input type="radio" name="day-of-week" id="monday" value="Monday">

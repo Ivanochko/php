@@ -43,5 +43,5 @@ $config['email'] = 'vasa.ivanochko.17@gmail.com';
     <!-- Icon -->
     <link rel="icon" href="img/pc.ico" type="image/x-icon">
     <link rel="shortcut icon" href="../img/pc.ico" type="image/x-icon">
-    
+
 </head>

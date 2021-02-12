@@ -8,8 +8,9 @@
 
 <body class="body">
     <div class="main">
+    <br>
         <h2 class="header">Цикл for</h2>
-        <form action="ivanochko_lab1_example_3.php" method="post" id="form-third-example" class="form-example">
+        <form action="ivanochko_lab1_example_3.php" method="post" class="form-example form-first-example" >
             Enter number of iterations: <input type="number" name="number-iteration" value="3"><br>
             <input type="submit" name="submit" value="Button to submit">
         </form>

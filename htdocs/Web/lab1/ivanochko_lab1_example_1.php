@@ -10,7 +10,7 @@
     <div class="main">
         <br>
         <h2 class="header">Доступ до змінних форми</h2>
-        <form action="ivanochko_lab1_example_1.php" method="post" id="form-first-example" class="form-example">
+        <form action="ivanochko_lab1_example_1.php" method="post" class="form-example form-third-example" >
             Your name: <input type="text" name="name" placeholder="Enter here"><br>
             Your age:  <input type="number" name="age" min="5" max="100"><br>
             <input type="submit" name="submit" value="Button to submit.">

@@ -8,6 +8,8 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 
 body {
@@ -29,11 +31,10 @@ a {
 }
 
 div.main {
-    width: 50%;
+    width: 80%;
     height: 100%;
-    /* text-align: center; */
+    text-align: center;
     margin: auto;
-    padding-left: 25%;
 }
 
 .header {
@@ -50,9 +51,8 @@ h2.header {
 
 .list-labs {
     width: 50%;
-    /* margin: auto; */
+    margin: auto;
     text-align: center;
-    /* background: red; */
 }
 
 .list-labs p {
@@ -74,42 +74,46 @@ h2.header {
     border: 1px solid white;
     box-shadow: 0 0 4px white, 0 0 20px rgba(179, 179, 179, 0.527);
     border-radius: 5px;
-}
-
-#form-first-example {
     max-width: 350px;
     min-width: 200px;
+    padding: 20px;
+    margin: auto;
+}
+
+.form-first-example {
+    height: 70px;
+}
+
+.form-second-example {
+    height: 85px;
+}
+
+.form-third-example {
     height: 110px;
-    padding: 20px;
 }
 
-#form-second-example {
-    max-width: 350px;
-    min-width: 200px;
-    height: 205px;
-    padding: 20px;
-}
-
-#form-third-example {
-    max-width: 350px;
-    min-width: 200px;
-    height: 75px;
-    padding: 20px;
-}
-
-#form-forth-example {
-    max-width: 350px;
-    min-width: 200px;
+.form-fourth-example {
     height: 135px;
-    padding: 20px;
 }
+
+.form-fifth-example {
+    height: 170px;
+}
+
+.form-sixth-example {
+    height: 205px;
+}
+
+
+/* #form-seventh-example {
+} */
 
 input {
     margin: 4px;
 }
 
 span.focus {
-    color: rgb(221, 75, 75);
+    color: rgb(126, 97, 71);
     font-weight: bolder;
     font-size: 20px;
     text-shadow: 0 0 5px black;
@@ -118,7 +122,6 @@ span.focus {
 #day-of-week-block {
     margin: auto;
     width: 100px;
-    /* height: 300px; */
     text-align: left;
     margin-left: 10%;
 }
@@ -145,12 +148,13 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    color: rgb(156, 156, 156);
+    color: rgb(141, 126, 92);
+    text-shadow: 0 0 3px black;
     text-decoration: underline;
 }
 
 input[type="submit"]:active {
-    color: rgb(88, 88, 88);
+    color: rgb(66, 59, 59);
     box-shadow: inset 0 0 5px black, inset 0 0 10px black, inset 0 0 15px black, 0 0 4px gray;
 }
 
@@ -165,6 +169,65 @@ input[type="number"] {
     font-size: 18px;
     max-height: 300px;
     overflow-x: auto;
+    font-family: Consolas, monaco, monospace;
+}
+
+.image-click {
+    height: 250px;
+    margin: 15px;
+    border: 4px solid rgba(150, 150, 150, 0.863);
+    border-radius: 15px;
+}
+
+.image-click:hover {
+    background-color: rgba(99, 99, 99, 0.349);
+    box-shadow: 0 0 5px rgba(138, 138, 138, 0.322);
+    cursor: pointer;
+}
+
+#reset-images {
+    background-color: rgb(56, 56, 56);
+    height: 40px;
+    border-radius: 15px;
+    background-image: url(../img/wood-2.jpg);
+    background-repeat: repeat;
+    color: white;
+    font-weight: bolder;
+    box-shadow: inset 0 0 5px black, inset 0 0 10px black;
+    border-color: rgb(73, 63, 63);
+    display: block;
+    width: 100px;
+    height: 23px;
+    margin: auto;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+#reset-images:hover {
+    color: rgb(141, 126, 92);
+    text-shadow: 0 0 3px black;
+    text-decoration: underline;
+}
+
+#reset-images:active {
+    color: rgb(66, 59, 59);
+    box-shadow: inset 0 0 5px black, inset 0 0 10px black, inset 0 0 15px black, 0 0 4px gray;
+}
+
+.image-clicked {
+    height: 120px;
+}
+
+#copyring {
+    position: fixed;
+    color: rgba(156, 156, 156, 0.562);
+    font-size: 17px;
+    right: 5;
+    top: 5;
+}
+
+#copyring:hover {
+    color: rgba(180, 180, 180, 0.603);
 }
 
 
