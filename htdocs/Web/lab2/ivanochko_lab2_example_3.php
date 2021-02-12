@@ -21,9 +21,9 @@
                 $x = $_POST['first-val'];
                 $y = $_POST['second-val'];
 
-                if ($x != (int)$x || !(int)$x > 0) {
+                if ($x != (int)$x || (int)$x <= 0) {
                     echo "Перше число не натуральне!";
-                } elseif ($y != (int)$y || !(int)$y > 0) {
+                } elseif ($y != (int)$y || (int)$y <= 0) {
                     echo "Друге число не натуральне!";
                 } else {
                     $x = (int)$x;
