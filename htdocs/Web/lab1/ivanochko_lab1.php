@@ -21,7 +21,6 @@
             }
             ?>
             <p><a href="../">Назад</a></p>
-            <?php require("../last_modifiend.php"); ?>
         </div>
     </div>
 

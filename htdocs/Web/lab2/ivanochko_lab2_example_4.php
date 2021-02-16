@@ -81,7 +81,6 @@
         </div>
         <div class="list-labs">
             <p><a href="ivanochko_lab2.php">Назад</a></p>
-            <?php require("../last_modifiend.php"); ?>
         </div>
     </div>
     <div id="copyring">

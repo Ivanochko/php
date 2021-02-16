@@ -17,7 +17,6 @@
             for ($i = 1; $i < 6; $i++) {
                 echo "<p><a href=\"lab$i/ivanochko_lab$i.php\">Лабораторна #$i</a></p>";
             } ?>
-        <?php require("last_modifiend.php"); ?>
         </div>
     </div>
 </body>

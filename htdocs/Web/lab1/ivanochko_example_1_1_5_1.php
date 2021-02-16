@@ -15,7 +15,6 @@
         ?>
         <div class="list-labs">
             <p><a href="ivanochko_lab1_example_6.php">Назад</a></p>
-            <?php require("../last_modifiend.php"); ?>
         </div>
     </div>
 </body>

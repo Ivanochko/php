@@ -1,0 +1,2 @@
+Login		Password	Host		Port
+b9_27943038	Yuliasik1	ftpupload.net	21
