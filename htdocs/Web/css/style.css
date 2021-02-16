@@ -43,9 +43,11 @@ div.main {
 
 h1.header {
     font-size: 35px;
+    margin-top: 35px;
 }
 
 h2.header {
+    margin-top: 25px;
     font-size: 27px;
 }
 

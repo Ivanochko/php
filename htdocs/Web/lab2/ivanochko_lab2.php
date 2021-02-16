@@ -6,7 +6,6 @@
 
 <body>
     <div class="main">
-        <br>
         <h1 class="header">Лабораторна робота #2</h1>
         <div class="list-labs">
             <?php

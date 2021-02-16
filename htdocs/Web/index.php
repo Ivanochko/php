@@ -10,7 +10,6 @@
 
 <body>
     <div class="main">
-        <br>
         <h1 class="header">Програмування мовою РНР</h1>
         <div class="list-labs">
             <?php

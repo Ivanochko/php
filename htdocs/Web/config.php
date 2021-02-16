@@ -2,8 +2,8 @@
 $config['charset'] = 'utf-8';
 $config['default_lng'] = 'ua';
 
-$config['host_name'] = 'http://93.184.216.34/htdocs/Web/';
-// $config['host_name'] = 'http://ivanochko.ezyro.com/Web';
+// $config['host_name'] = 'http://93.184.216.34/htdocs/Web/';
+$config['host_name'] = 'http://ivanochko.ezyro.com/Web';
 
 $config_host_name = $config['host_name'];
 
@@ -37,8 +37,10 @@ $config['email'] = 'vasa.ivanochko.17@gmail.com';
     <link rel="stylesheet" href="../css/style.css" type="text/css">
 
     <!-- Scripts -->
-    <script type='text/javascript' src='/Proga/Web/js/jquery-1.9.1.min.js'></script>
-    <script type='text/javascript' src='/Proga/Web/js/my.js'></script>
+    <script type='text/javascript' src='js/jquery-1.9.1.min.js'></script>
+    <script type='text/javascript' src='js/my.js'></script>
+    <script type='text/javascript' src='../js/jquery-1.9.1.min.js'></script>
+    <script type='text/javascript' src='../js/my.js'></script>
 
     <!-- Icon -->
     <link rel="icon" href="img/pc.ico" type="image/x-icon">
