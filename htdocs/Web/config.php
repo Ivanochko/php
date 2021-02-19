@@ -33,23 +33,41 @@ $config['email'] = 'vasa.ivanochko.17@gmail.com';
     <meta http-equiv='Content-Type' content='text/html' charset='utf-8'>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="../css/style.css" type="text/css">
-
-    <!-- Scripts -->
-    <script type='text/javascript' src='js/jquery-1.9.1.min.js'></script>
-    <script type='text/javascript' src='js/my.js'></script>
-    <script type='text/javascript' src='../js/jquery-1.9.1.min.js'></script>
-    <script type='text/javascript' src='../js/my.js'></script>
-
-    <!-- Icon -->
-    <link rel="icon" href="img/pc.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="../img/pc.ico" type="image/x-icon">
-
+    <?php
+    $path_parts = pathinfo($_SERVER['SCRIPT_FILENAME']);
+    // local
+//    if ($path_parts['dirname'] == 'D:\Labs\2kurs\2sem\php\htdocs\Web') {
+    // host
+    if ($path_parts['dirname'] == '/home/vol9_5/ezyro.com/ezyro_27823295/htdocs/Web') {
+        // styles
+        echo '<link rel="stylesheet" href="css/style.css" type="text/css">';
+        echo '<link rel="stylesheet" href="css/dark.css" type="text/css" id="theme-link">';
+        // scripts
+        echo '<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>';
+        echo '<script type="text/javascript" src="js/my.js"></script>';
+        echo '<script type="text/javascript" src="js/switch_theme.js"></script>';
+        // icon
+        echo '<link rel="icon" href="img/pc.ico" type="image/x-icon">';
+    } else {
+        // styles
+        echo '<link rel="stylesheet" href="../css/style.css" type="text/css">';
+        echo '<link rel="stylesheet" href="../css/dark.css" type="text/css" id="theme-link">';
+        // scripts
+        echo '<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>';
+        echo '<script type="text/javascript" src="../js/my.js"></script>';
+        echo '<script type="text/javascript" src="../js/switch_theme.js"></script>';
+        // icon
+        echo '<link rel="icon" href="../img/pc.ico" type="image/x-icon">';
+    }
+    ?>
 </head>
 
 <?php
 $LastModified_unix = strtotime(date("D, d M Y H:i:s", (filectime($_SERVER['SCRIPT_FILENAME'])))) + 7200;
 $LastModified = gmdate("D, d M Y H:i:s \G\M\T", $LastModified_unix);
-echo "<br>"."<span class=\"last-modified\">Last modified: $LastModified" . "</span><br>";
+echo "<br>" . "<span class=\"last-modified\">Last modified: $LastModified" . "</span><br>";
+?>
+
+<?php
+echo ' <div class="theme-button" id="theme-button" title="Натисніть, щоб змінити тему"> </div>';
 ?>

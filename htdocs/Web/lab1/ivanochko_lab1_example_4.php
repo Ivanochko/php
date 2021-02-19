@@ -8,7 +8,6 @@
 
 <body class="body">
     <div class="main">
-        <br>
         <h2 class="header">Цикл while</h2>
         <form action="ivanochko_lab1_example_4.php" method="post" class="form-example form-fourth-example">
             Enter multiplier: <input type="number" name="multiplier" min="1" max="10" value="2"><br>
@@ -16,6 +15,7 @@
             Enter stop value: <input type="number" name="stop-value" min="10" max="100" value="20"><br>
             <input type="submit" name="submit" value="Button to submit">
         </form>
+        <div class="result">
         <?php
         if (isset($_POST['submit'])) {
             $multiplier = $_POST['multiplier'];
@@ -35,6 +35,7 @@
             }
         }
         ?>
+        </div>
         <div class="list-labs">
             <p><a href="ivanochko_lab1.php">Назад</a></p>
         </div>

@@ -8,7 +8,6 @@
 
 <body class="body">
     <div class="main">
-        <br>
         <h2 class="header">Оператор switch</h2>
         <form action="ivanochko_lab1_example_2.php" method="post" class="form-example form-sixth-example" >
             Day of week: <br>
@@ -30,6 +29,7 @@
             </div>
             <input type="submit" name="submit" value="Button to submit.">
         </form>
+        <div class="result">
         <?php
         if (isset($_POST['submit'])) {
             if (isset($_POST['day-of-week'])) {
@@ -68,6 +68,7 @@
             }
         }
         ?>
+        </div>
         <div class="list-labs">
             <p><a href="ivanochko_lab1.php">Назад</a></p>
         </div>
