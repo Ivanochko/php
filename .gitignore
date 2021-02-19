@@ -1,3 +1,4 @@
 *.txt
 *.zip
 ready/
+.vscode/*.json
