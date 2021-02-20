@@ -52,9 +52,41 @@ function out_array($arr)
 
 function out_array_with_index($arr)
 {
-    for ($i=0; $i < count($arr); $i++) { 
-        echo "[$i] = ".$arr[$i].'<br>';
+    foreach ($arr as $key => $value) {
+        echo "[$key] = $value <br>";
     }
+}
+
+function out_reversed_array($arr)
+{
+    for ($i = count($arr) - 1; $i > -1; $i--) {
+        echo $arr[$i] . ", ";
+    }
+    echo '<br>';
+}
+
+function out_reversed_array_with_index($arr)
+{
+    for ($i = count($arr) - 1; $i > -1; $i--) {
+        echo "[$i] = " . $arr[$i] . '<br>';
+    }
+}
+
+function out_matrix(
+    $matrix,
+    $border = 1,
+    $cellpadding = 3,
+    $cellspacing = 3
+) {
+    echo "<table class=\"created-table\" border=$border cellpadding=$cellpadding cellspacing=$cellspacing>";
+    foreach ($matrix as $i) {
+        echo '<tr>';
+        foreach ($i as $j) {
+            echo '<td>' . $j . '</td>';
+        }
+        echo '</tr>';
+    }
+    echo '</table>' . '<br>';
 }
 
 function get_max_index($arr)
@@ -83,29 +115,16 @@ function get_min_index($arr)
     return $index;
 }
 
-function get_avg_index($arr)
+function get_avg($arr)
 {
     $avg = 0;
-    for ($i = 0; $i < count($arr); $i++) {
-        if ((gettype($arr[$i]) == "integer" || gettype($arr[$i]) == "double")) {
-            $avg += $arr[$i];
+    foreach ($arr as $i) {
+        if ((gettype($i) == "integer" || gettype($i) == "double")) {
+            $avg += $i;
         }
     }
     $avg /= count($arr);
-
-    $temp = abs($arr[0] - $avg);
-    $index = 0;
-
-    for ($i = 1; $i < count($arr); $i++) {
-        if ((gettype($arr[$i]) == "integer" || gettype($arr[$i]) == "double")
-            && abs($arr[$i] - $avg) < $temp
-        ) {
-            $temp = abs($arr[$i] - $avg);
-            $index = $i;
-        }
-    }
-
-    return $index;
+    return $avg;
 }
 
 function power_all_elems(&$arr, $pow)
@@ -115,4 +134,33 @@ function power_all_elems(&$arr, $pow)
             $arr[$i] *= $arr[$i];
         }
     }
+}
+
+function get_last_vals_of_matrix($matrix)
+{
+    $arr = array();
+    $size = count($matrix);
+    for ($i = 0; $i < $size; $i++) {
+        $arr[$i] = $matrix[$i][$size - 1];
+    }
+    return $arr;
+}
+
+function get_min_vals_of_matrix($matrix)
+{
+    $arr = array();
+    foreach ($matrix as $i) {
+        array_push($arr, $i[get_min_index($i)]);
+    }
+    return $arr;
+}
+
+function task6($N)
+{
+    $arr = array();
+    for ($i = 0; $i < $N; $i++) {
+        $arr[$i] = pow(($i + 1), 2);
+    }
+
+    out_array_with_index($arr);
 }

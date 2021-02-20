@@ -3,7 +3,6 @@
 <head>
     <?php
     require("../config.php");
-    require("../function.php");
     ?>
 </head>
 
@@ -20,11 +19,11 @@
 
             $min = get_min_index($arr);
             $max = get_max_index($arr);
-            $avg = get_avg_index($arr);
+            $avg = get_avg($arr);
 
             echo "<br> Min value: ".$arr[$min]." on index $min";
             echo "<br> Max value: ".$arr[$max]." on index $max";
-            echo "<br> Avg value: ".$arr[$avg]." on index $avg";
+            echo "<br> Avg value: ".$avg;
             echo '</div>';
         } else {
             echo '<form action="ivanochko_lab3_example_2.php" method="post" class="form-example">';

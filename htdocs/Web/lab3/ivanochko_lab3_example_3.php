@@ -2,7 +2,6 @@
 
 <head>
     <?php
-    require("../function.php");
     require("../config.php");
     ?>
 </head>

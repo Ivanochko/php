@@ -16,6 +16,10 @@ body {
     background-size: cover;
 }
 
+.theme-button:hover {
+    background-image: url(../img/sun_yellow.png);
+}
+
 .list-labs p:hover {
     text-shadow: 0 0 15px white;
 }

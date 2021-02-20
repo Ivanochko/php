@@ -16,6 +16,10 @@ body {
     background-size: cover;
 }
 
+.theme-button:hover {
+    background-image: url(../img/moon_gray.png);
+}
+
 .list-labs p:hover {
     text-shadow: 0 0 15px rgba(0, 0, 0, 0.815);
 }
