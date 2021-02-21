@@ -13,7 +13,7 @@
         <h1 class="header">Програмування мовою РНР</h1>
         <div class="list-labs">
             <?php
-            for ($i = 1; $i < 6; $i++) {
+            for ($i = 1; $i < 5; $i++) {
                 echo "<p><a href=\"lab$i/ivanochko_lab$i.php\">Лабораторна #$i</a></p>";
             } ?>
         </div>
