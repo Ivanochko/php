@@ -100,6 +100,28 @@ input[type="submit"]:active {
     color: rgba(180, 180, 180, 0.603);
 }
 
+.table-header {
+    background: rgba(219, 219, 219, 0.815);
+    color: black;
+}
+
+.table-countries {
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.table-countries * {
+    border-top: 1px solid rgb(206, 206, 206);
+    border-bottom: 1px solid rgb(206, 206, 206);
+}
+
+.odd {
+    background: rgba(94, 94, 94, 0.562);
+}
+
+.even {
+    background: rgba(53, 53, 53, 0.562);
+}
+
 
 /* Scrolbar chrome */
 

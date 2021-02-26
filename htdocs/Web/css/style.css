@@ -221,6 +221,17 @@ input[type="submit"] {
     top: 5;
 }
 
+.table-countries {
+    width: 360px;
+    margin: auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.table-countries * {
+    padding: 4px;
+}
+
 
 /* Scrolbar chrome */
 
