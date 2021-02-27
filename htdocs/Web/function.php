@@ -164,3 +164,17 @@ function task6($N)
 
     out_array_with_index($arr);
 }
+function get_name($name)
+{
+    echo "<br>" . mb_substr($name, -1, 1, "utf-8") . "<br>";
+    echo "<br>" . $name[3] . "<br>";
+    
+    // echo "<br>" . $name[strlen($name)-1] . "<br>";
+    if (substr($name, -1) == "а") {
+        return substr($name, 0, -1) + "и";
+    } elseif (substr($name, -1) == "я") {
+        return substr($name, 0, -1) + "ї";
+    } else {
+        return $name;
+    }
+}

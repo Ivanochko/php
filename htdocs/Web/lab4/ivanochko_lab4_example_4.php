@@ -56,6 +56,13 @@
                 echo "</tr>";
             }
             echo "</table>";
+            echo "<br>";
+            foreach ($countries as $country => $data) {
+                echo "<p> Столиця ";
+                echo get_name($data['name']);
+                echo " - ". $data['capital'];
+                echo ", населення - ". $data['population'] . " млн. людей!";
+            }
             ?>
         </div>
         <div class="list-labs">
