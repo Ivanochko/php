@@ -9,7 +9,7 @@
 <body class="body">
     <div class="main">
         <h2 class="header">Завдання #4</h2>
-        <div class="result">
+        <div class="result" id="result4_4">
             <?php
             $countries = array(
                 "Ukraine" => array(
@@ -38,31 +38,15 @@
                     "population" => '59'
                 )
             );
-            echo "<table class=\"table-countries\">";
-            echo "<tr class=\"table-header\"><th>Name</th><th>Capital</th><th>Population</th></tr>";
-            $i = 0;
-            foreach ($countries as $country => $data) {
-                if ($i % 2) {
-                    echo "<tr class=\"odd\">";
-                } else {
-                    echo "<tr class=\"even\">";
-                }
-                $i++;
-                foreach ($data as $value) {
-                    echo "<td>";
-                    echo "$value";
-                    echo "</td>";
-                }
-                echo "</tr>";
-            }
-            echo "</table>";
-            echo "<br>";
-            foreach ($countries as $country => $data) {
-                echo "<p> Столиця ";
-                echo get_name($data['name']);
-                echo " - ". $data['capital'];
-                echo ", населення - ". $data['population'] . " млн. людей!";
-            }
+
+            out_foreach_in_table($countries);
+
+            out_foreach_tences($countries);
+            
+            ksort($countries);
+
+            out_array_with_index($countries);
+
             ?>
         </div>
         <div class="list-labs">

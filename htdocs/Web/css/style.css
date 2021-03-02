@@ -25,14 +25,6 @@ a {
     outline: none;
 }
 
-.last-modified {
-    position: fixed;
-    bottom: 35;
-    width: 35%;
-    left: 40%;
-    font-size: 17px;
-}
-
 .theme-button {
     position: fixed;
     left: 25;
@@ -95,9 +87,10 @@ h2.header {
 .last-modified {
     position: fixed;
     bottom: 20;
-    width: 30%;
-    left: 35%;
+    width: 100%;
+    left: 0;
     font-size: 17px;
+    text-align: center;
 }
 
 span.focus {
@@ -195,6 +188,11 @@ input[type="submit"] {
     max-width: 600px;
 }
 
+#result4_4 {
+    max-height: 500px;
+    min-height: 500px;
+}
+
 #reset-images {
     height: 40px;
     border-radius: 15px;
@@ -230,6 +228,11 @@ input[type="submit"] {
 
 .table-countries * {
     padding: 4px;
+}
+
+.array-out {
+    text-align: start;
+    width: 300px;
 }
 
 
