@@ -6,7 +6,7 @@
     ?>
 </head>
 
-<body class="body">
+<body class="body"> 
     <div class="main">
         <h2 class="header">Завдання з лабораторної роботи</h2>
         <?php 

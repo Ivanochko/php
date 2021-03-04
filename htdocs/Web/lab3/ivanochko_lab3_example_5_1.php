@@ -25,7 +25,7 @@
             echo '</div>';
         }
         ?>
-
+ 
         <div class="list-labs">
 
             <p><a href="ivanochko_lab3_example_5.php">Назад</a></p>

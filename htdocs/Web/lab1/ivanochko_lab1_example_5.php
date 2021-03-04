@@ -19,7 +19,7 @@
         <?php
         if (isset($_POST['submit'])) {
             $multiplier = $_POST['multiplier'];
-            $start = $_POST['start-value'];
+            $start = $_POST['start-value']; 
             $stop = $_POST['stop-value'];
             if ($multiplier == null || $start == null || $stop == null) {
                 echo "Please, enter all values before submiting!";

@@ -61,7 +61,7 @@ $config['email'] = 'vasa.ivanochko.17@gmail.com';
         echo '<link rel="icon" href="../img/pc.ico" type="image/x-icon">';
         // functions
         require("../function.php");
-    }
+    } 
     ?>
 </head>
 

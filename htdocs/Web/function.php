@@ -95,7 +95,7 @@ function out_matrix(
         foreach ($i as $j) {
             echo '<td>' . $j . '</td>';
         }
-        echo '</tr>';
+        echo '</tr>'; 
     }
     echo '</table>' . '<br>';
 }

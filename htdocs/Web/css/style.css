@@ -107,7 +107,8 @@ input[type="number"] {
     text-align: center;
 }
 
-input[type="submit"] {
+input[type="submit"],
+input[type="button"] {
     cursor: pointer;
     height: 40px;
     border-radius: 15px;
@@ -163,7 +164,8 @@ input[type="submit"] {
     font-family: Consolas, monaco, monospace;
     margin: auto;
     margin-top: 15px;
-    max-width: 400px;
+    max-width: 500px;
+    min-width: 450px;
 }
 
 .image-clicked {
@@ -191,6 +193,11 @@ input[type="submit"] {
 #result4_4 {
     max-height: 500px;
     min-height: 500px;
+}
+
+#result4_5 {
+    min-width: 350px;
+    max-height: 500px;
 }
 
 #reset-images {
@@ -226,8 +233,26 @@ input[type="submit"] {
     border-collapse: collapse;
 }
 
-.table-countries * {
+.table-countries *,
+.table-population * {
     padding: 4px;
+}
+
+.table-population {
+    width: 460px;
+    margin: auto;
+    text-align: center;
+    /* border-collapse: collapse; */
+}
+
+.table-population td {
+    padding: 4px;
+    text-align: center;
+    /* border: 1px solid white; */
+}
+
+.table-population tr {
+    /* border: 1px solid red; */
 }
 
 .array-out {

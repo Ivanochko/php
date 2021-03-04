@@ -28,7 +28,7 @@
             out_array($second);
             echo "</p>" . "<p> Merged array:" . "<br>";
             out_array($result);
-            echo "</p>";
+            echo "</p>"; 
             ?>
         </div>
         <div class="list-labs">

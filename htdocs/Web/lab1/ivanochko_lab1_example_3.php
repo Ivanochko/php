@@ -13,7 +13,7 @@
             Enter number of iterations: <input type="number" name="number-iteration" value="3"><br>
             <input type="submit" name="submit" value="Button to submit">
         </form>
-        <div class="result">
+        <div class="result">  
             <?php
             if (isset($_POST['submit'])) {
                 $number = $_POST['number-iteration'];
