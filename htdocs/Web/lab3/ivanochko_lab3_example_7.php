@@ -28,7 +28,7 @@
                 require("../config.php");
             } else {
                 echo "Відсутнє число";
-            }
+            } 
             ?>
         </div>
         <div class="list-labs">

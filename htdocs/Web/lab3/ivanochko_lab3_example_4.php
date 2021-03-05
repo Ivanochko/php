@@ -21,7 +21,7 @@
                 $all_distance += $distance;
                 $day++;
             }
-
+ 
             echo "<p>Task 8 variant: <br>";
             echo "Sportsman will overcome 50 km after <span class=\"focus\"> $day </span> days! </p> ";
 

@@ -50,11 +50,22 @@ function out_array($arr)
     echo '<br>';
 }
 
-function out_array_with_index($arr)
+function out_array_with_index($arr, $end = 0)
 {
+    echo "<div class=\"array-out\">";
     foreach ($arr as $key => $value) {
-        echo "[$key] = $value <br>";
+        if (is_array($value)) {
+            echo "[$key] = <br>";
+            out_array_with_index($value, $end + 3);
+            echo "<br>";
+        } else {
+            for ($i = 0; $i < $end; $i++) {
+                echo "  ";
+            }
+            echo "[$key] = $value <br>";
+        }
     }
+    echo "</div>";
 }
 
 function out_reversed_array($arr)
@@ -84,7 +95,7 @@ function out_matrix(
         foreach ($i as $j) {
             echo '<td>' . $j . '</td>';
         }
-        echo '</tr>';
+        echo '</tr>'; 
     }
     echo '</table>' . '<br>';
 }
@@ -163,4 +174,67 @@ function task6($N)
     }
 
     out_array_with_index($arr);
+}
+
+function out_foreach_in_table($arr)
+{
+
+    echo "<table class=\"table-generated-data table-countries\">";
+    echo "<tr class=\"table-header\"><th>Name</th><th>Capital</th><th>Population</th></tr>";
+    $i = 0;
+    foreach ($arr as $country => $data) {
+        if ($i % 2) {
+            echo "<tr class=\"odd\">";
+        } else {
+            echo "<tr class=\"even\">";
+        }
+        $i++;
+        foreach ($data as $value) {
+            echo "<td>";
+            echo "$value";
+            echo "</td>";
+        }
+        echo "</tr>";
+    }
+    echo "</table>";
+    echo "<br>";
+}
+
+function out_foreach_tences($arr)
+{
+    foreach ($arr as $country => $data) {
+        echo "<p> Столиця ";
+        echo get_name($data['name']);
+        echo " - " . $data['capital'];
+        echo ", населення - " . $data['population'] . " млн. людей! </p>";
+    }
+}
+
+function get_name($name)
+{
+    $letters = preg_split('//u', $name, -1, PREG_SPLIT_NO_EMPTY);
+    switch ($letters[count($letters) - 1]) {
+        case 'а':
+            return substr($name, 0, -2) . "и";
+            break;
+        case 'я':
+            return substr($name, 0, -2) . "ї";
+            break;
+        case 'і':
+            return substr($name, 0, -2) . "і";
+            break;
+        case 'ь':
+            return substr($name, 0, -2) . "і";
+            break;
+        default:
+            return substr($name, 0, -2) . "у";
+            break;
+    }
+}
+function swap_key_value_in_array(&$array)
+{
+    $new = array();
+    foreach ($array as $key => $value)
+        $new[$value] = $key;
+    $array = $new;
 }

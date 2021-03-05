@@ -20,7 +20,7 @@
             $min = get_min_index($arr);
             $max = get_max_index($arr);
             $avg = get_avg($arr);
-
+ 
             echo "<br> Min value: ".$arr[$min]." on index $min";
             echo "<br> Max value: ".$arr[$max]." on index $max";
             echo "<br> Avg value: ".$avg;

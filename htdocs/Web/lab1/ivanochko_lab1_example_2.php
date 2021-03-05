@@ -30,7 +30,7 @@
             <input type="submit" name="submit" value="Button to submit.">
         </form>
         <div class="result">
-        <?php
+        <?php 
         if (isset($_POST['submit'])) {
             if (isset($_POST['day-of-week'])) {
                 $day = $_POST['day-of-week'];

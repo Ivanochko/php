@@ -44,7 +44,9 @@ label.day-of-week:hover {
     background-color: rgba(82, 82, 82, 0.671);
 }
 
-input[type="submit"] {
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
     background-color: rgb(56, 56, 56);
     background-image: url(../img/wood-2.jpg);
     color: white;
@@ -52,13 +54,16 @@ input[type="submit"] {
     border-color: rgb(73, 63, 63);
 }
 
-input[type="submit"]:hover {
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover {
     color: rgb(141, 126, 92);
     text-shadow: 0 0 3px black;
     text-decoration: underline;
 }
 
-input[type="submit"]:active {
+input[type="submit"]:active,
+input[type="button"]:active {
     color: rgb(66, 59, 59);
     box-shadow: inset 0 0 5px black, inset 0 0 10px black, inset 0 0 15px black, 0 0 4px gray;
 }
@@ -98,6 +103,34 @@ input[type="submit"]:active {
 
 #copyring:hover {
     color: rgba(180, 180, 180, 0.603);
+}
+
+.table-header {
+    background: rgba(219, 219, 219, 0.815);
+    color: black;
+}
+
+.table-countries,
+.table-population {
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.table-countries * {
+    border-top: 1px solid rgb(206, 206, 206);
+    border-bottom: 1px solid rgb(206, 206, 206);
+}
+
+.odd {
+    background: rgba(94, 94, 94, 0.562);
+}
+
+.even {
+    background: rgba(53, 53, 53, 0.562);
+}
+
+.horisontal {
+    box-shadow: 0 0 2px white, 0 0 20px rgba(179, 179, 179, 0.527);
+    background-color: white;
 }
 
 

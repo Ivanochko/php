@@ -15,7 +15,7 @@
             Enter stop value: <input type="number" name="stop-value" min="10" max="100" value="20"><br>
             <input type="submit" name="submit" value="Button to submit">
         </form>
-        <div class="result">
+        <div class="result"> 
         <?php
         if (isset($_POST['submit'])) {
             $multiplier = $_POST['multiplier'];

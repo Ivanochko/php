@@ -24,7 +24,7 @@
 
             echo 'Array with minimal value of every row: <br>';
             out_array(get_min_vals_of_matrix($matrix));
-            echo 'Array with last value of every row: <br>';
+            echo 'Array with last value of every row : <br>';
             out_array(get_last_vals_of_matrix($matrix));
 
             ?>
@@ -37,4 +37,4 @@
 
 </body>
 
-</html>
+</html> 

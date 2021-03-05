@@ -15,7 +15,7 @@
         </form>
         <div class="list-labs">
             <p><a href="ivanochko_lab1.php">Назад</a></p>
-        </div>
+        </div> 
     </div>
 </body>
 
