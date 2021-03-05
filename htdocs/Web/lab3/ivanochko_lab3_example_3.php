@@ -19,7 +19,7 @@
             out_array($arr);
             
             power_all_elems($arr, 2);
-
+ 
             echo "</p><p>Після змін:<br>";
             out_array($arr);
             

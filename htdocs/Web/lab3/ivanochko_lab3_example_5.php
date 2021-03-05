@@ -20,7 +20,7 @@
             a: <input type="number" name="a" required><br>
             <input type="submit" name="submit" value="Generate and reverse array!">
         </form>
-
+ 
         <div class="list-labs">
             <p><a href="ivanochko_lab3.php">Назад</a></p>
         </div>

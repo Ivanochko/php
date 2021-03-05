@@ -13,7 +13,7 @@
             Your name: <input type="text" name="name" placeholder="Enter here"><br>
             Your age:  <input type="number" name="age" min="5" max="100"><br>
             <input type="submit" name="submit" value="Button to submit.">
-        </form>
+        </form> 
         <div class="result">
         <?php
         if (isset($_POST['submit'])) {

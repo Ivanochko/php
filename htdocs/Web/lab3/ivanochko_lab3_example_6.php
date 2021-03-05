@@ -25,7 +25,7 @@
                     echo "Число натуральне!";
                     echo "Перші $N натуральних чисел піднесені до квадрату: <br>";
                     task6($N);
-                }
+                } 
             }
             include_once("ivanochko_lab3_example_7.php");
             ?>
