@@ -179,7 +179,7 @@ function task6($N)
 function out_foreach_in_table($arr)
 {
 
-    echo "<table class=\"table-countries\">";
+    echo "<table class=\"table-generated-data table-countries\">";
     echo "<tr class=\"table-header\"><th>Name</th><th>Capital</th><th>Population</th></tr>";
     $i = 0;
     foreach ($arr as $country => $data) {

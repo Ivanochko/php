@@ -36,7 +36,7 @@ $config['email'] = 'vasa.ivanochko.17@gmail.com';
     <?php
     $path_parts = pathinfo($_SERVER['SCRIPT_FILENAME']);
     // host or local
-    if ($path_parts['dirname'] == '/home/vol9_5/byethost33.com/b33_28036935/htdocs/Web' 
+    if ($path_parts['dirname'] == '/home/vol6_7/epizy.com/epiz_28077250/htdocs/Web' 
        || $path_parts['dirname'] == 'D:\Labs\2kurs\2sem\php\htdocs\Web') {
         // styles
         echo '<link rel="stylesheet" href="css/style.css" type="text/css">';

@@ -8,7 +8,7 @@
         <h1 class="header">Лабораторна робота #4</h1>
         <div class="list-labs">
             <?php
-            for ($i = 1; $i < 6; $i++) {
+            for ($i = 1; $i < 8; $i++) {
                 echo "<p><a href=\"ivanochko_lab4_example_$i.php\">Завдання #$i</a></p>";
             }
             ?>
