@@ -34,9 +34,13 @@
                 $count_tags++;
             }
             echo "</table>";
+            $count_tags--;
 
-            
-
+            $file_out = fopen('files/out.txt', 'w+');
+            fputs($file_out, "Всього в файлі $filename описано $count_tags тегів");
+            fseek($file_out, 0);
+            $result = fgets($file_out);
+            echo "<p>$result</p>";
             // echo "<p>Всього в файлі $filename описано $count_tags тегів"; 
             ?>
         </div>

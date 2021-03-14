@@ -20,14 +20,17 @@
                 } else {
                     $name = basename($_FILES['userfile']['name']);
                     $path = pathinfo($_SERVER['SCRIPT_FILENAME'])['dirname'];
-                    $pathfile = '';
-                    if (str_contains($path, '/')) {
-                        $pathfile = $path . '/files/';
-                    } else {
-                        $pathfile = $path . '\\files\\';
-                    }
-                    move_uploaded_file($_FILES['userfile']['tmp_name'], $pathfile . $name);
-                    echo "File uploaded to $pathfile$name <br>";
+                    // $pathfile = '';
+                    $path .= '/files';
+                    // if (str_contains($path, '/')) {
+                    //     $pathfile = $path . '/files/';
+                    // } else {
+                    //     $pathfile = $path . '\\files\\';
+                    // }
+                    // echo "s";
+                    // echo $path . $name;
+                    move_uploaded_file($_FILES['userfile']['tmp_name'], $path . '/' . $name);
+                    echo "File uploaded to $path/$name <br>";
                     echo "Size of file: " . ($_FILES['userfile']['size'] / 1000) . " KB";
                 }
             }
