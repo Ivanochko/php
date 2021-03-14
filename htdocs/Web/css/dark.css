@@ -111,11 +111,13 @@ input[type="button"]:active {
 }
 
 .table-countries,
-.table-population {
+.table-population,
+.table-files {
     border: 2px solid rgb(255, 255, 255);
 }
 
-.table-countries * {
+.table-countries *,
+.table-files * {
     border-top: 1px solid rgb(206, 206, 206);
     border-bottom: 1px solid rgb(206, 206, 206);
 }

@@ -153,15 +153,12 @@ input[type="reset"] {
 #form-task4_6 {
     text-align: right;
     min-width: 450px;
-    /* background: red; */
 }
 
 #form-task4_7 {
     text-align: left;
     min-width: 450px;
     max-height: 450px;
-    /* max-height: px; */
-    /* background: red; */
 }
 
 #day-of-week-block {
@@ -179,7 +176,7 @@ input[type="reset"] {
     font-family: Consolas, monaco, monospace;
     margin: auto;
     margin-top: 15px;
-    max-width: 500px;
+    max-width: 600px;
     min-width: 450px;
 }
 
@@ -233,6 +230,11 @@ input[type="reset"] {
     max-height: 500px;
 }
 
+#result5_3 {
+    min-width: 550px;
+    max-width: 700px;
+}
+
 #reset-images {
     height: 40px;
     border-radius: 15px;
@@ -259,7 +261,8 @@ input[type="reset"] {
     top: 5;
 }
 
-.table-countries {
+.table-countries,
+.table-files {
     width: 360px;
     margin: auto;
     text-align: center;
