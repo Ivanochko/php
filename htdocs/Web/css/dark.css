@@ -130,7 +130,7 @@ input[type="button"]:active {
     background: rgba(53, 53, 53, 0.562);
 }
 
-.horisontal {
+hr {
     box-shadow: 0 0 2px white, 0 0 20px rgba(179, 179, 179, 0.527);
     background-color: white;
 }

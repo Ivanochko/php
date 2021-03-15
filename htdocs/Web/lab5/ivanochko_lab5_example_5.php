@@ -41,7 +41,7 @@
             fseek($file_out, 0);
             $result = fgets($file_out);
             echo "<p>$result</p>";
-            // echo "<p>Всього в файлі $filename описано $count_tags тегів"; 
+            fclose($file_out);
             ?>
         </div>
         <div class="list-labs">

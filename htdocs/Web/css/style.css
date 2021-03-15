@@ -235,6 +235,14 @@ input[type="reset"] {
     max-width: 700px;
 }
 
+#result5_6 {
+    min-width: 650px;
+    max-width: 750px;
+    min-height: 490px;
+    max-height: 490px;
+    /* overflow: hidden; */
+}
+
 #reset-images {
     height: 40px;
     border-radius: 15px;
@@ -350,10 +358,25 @@ input[type="reset"] {
     height: 0.5px;
 }
 
+.horisontal2 {
+    width: 100%;
+    height: 0.5px;
+}
+
 select[multiple="multiple"] {
     height: 120px;
     width: 200px;
     text-align: center;
+}
+
+.task {
+    text-decoration: underline;
+}
+
+.block-buttons-task {
+    margin: auto;
+    margin-top: -20px;
+    margin-bottom: -15px;
 }
 
 

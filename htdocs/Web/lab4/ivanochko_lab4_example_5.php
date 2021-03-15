@@ -18,7 +18,7 @@
                 $("#4_5_task2").show();
             });
         });
-        </script>
+    </script>
 </head>
 
 <body class="body">
