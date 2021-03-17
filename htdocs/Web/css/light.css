@@ -10,15 +10,10 @@ body {
     color: rgb(32, 32, 32);
 }
 
-.theme-button {
-    background-image: url(../img/moon_black.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
-.theme-button:hover {
+/* .theme-button:hover {
     background-image: url(../img/moon_gray.png);
-}
+} */
 
 .list-labs p:hover {
     text-shadow: 0 0 15px rgba(0, 0, 0, 0.815);
@@ -113,7 +108,8 @@ input[type="button"]:active {
     border: 2px solid black;
 }
 
-.table-countries * {
+.table-countries *,
+.table-files * {
     border-top: 1px solid rgb(51, 51, 51);
     border-bottom: 1px solid rgb(51, 51, 51);
 }
@@ -131,7 +127,7 @@ input[type="button"]:active {
     text-shadow: 0 0 3px white;
 }
 
-.horisontal {
+hr {
     box-shadow: 0 0 2px black, 0 0 20px rgba(51, 51, 51, 0.527);
     background-color: black;
 }
@@ -141,4 +137,28 @@ input[type="button"]:active {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #272727;
+}
+
+.nav-elem:hover {
+    background: rgba(39, 39, 39, 0.219);
+}
+
+div.to-main {
+    background-image: url(../img/home_dark.png);
+}
+
+.theme-button {
+    background-image: url(../img/moon_black.png);
+}
+
+div.mail-me {
+    background-image: url(../img/mail_dark.png);
+}
+
+div.telegram-me {
+    background-image: url(../img/telegram_dark.png);
+}
+
+div.my-git {
+    background-image: url(../img/github_dark.png);
 }

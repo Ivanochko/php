@@ -95,7 +95,7 @@ function out_matrix(
         foreach ($i as $j) {
             echo '<td>' . $j . '</td>';
         }
-        echo '</tr>'; 
+        echo '</tr>';
     }
     echo '</table>' . '<br>';
 }
@@ -210,7 +210,7 @@ function out_foreach_tences($arr)
     }
 }
 
-function get_name($name)
+function get_name(string $name): string
 {
     $letters = preg_split('//u', $name, -1, PREG_SPLIT_NO_EMPTY);
     switch ($letters[count($letters) - 1]) {
@@ -231,10 +231,78 @@ function get_name($name)
             break;
     }
 }
-function swap_key_value_in_array(&$array)
+function swap_key_value_in_array(array &$array): void
 {
     $new = array();
     foreach ($array as $key => $value)
         $new[$value] = $key;
     $array = $new;
+}
+
+function toLowerCase(string &$str)
+{
+    $lowerLetters = array('а', 'б', 'в', 'г', 'ґ', 'д', 'е', 'є', 'ж', 'з', 'и', 'і', 'ї', 'й', 'к', 'л', 'м', 'н', 'о', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'ь', 'ю', 'я');
+    $upperLetters = array('А', 'Б', 'В', 'Г', 'Ґ', 'Д', 'Е', 'Є', 'Ж', 'З', 'И', 'І', 'Ї', 'Й', 'К', 'Л', 'М', 'Н', 'О', 'П', 'Р', 'С', 'Т', 'У', 'Ф', 'Х', 'Ц', 'Ч', 'Ш', 'Щ', 'Ь', 'Ю', 'Я');
+    $str = str_replace($upperLetters, $lowerLetters, strtolower($str));
+}
+
+function out_words_of_str(string $str): void
+{
+    $tmp = explode(" ", $str);
+    out_array($tmp);
+}
+
+function read_file($file): string
+{
+    $file_text = '';
+    while (!feof($file))
+        $file_text .= fgets($file);
+
+    return $file_text;
+}
+
+function open_and_read_file(string $filename, string $filepath = ""): string
+{
+    $file = fopen($filepath . $filename, 'r');
+    // Read text from file
+    $file_text = read_file($file);
+    fclose($file);
+    return $file_text;
+}
+
+function str_get_words(string $str): array
+{
+    // set all letters in text to lower case to get good sort
+    toLowerCase($str);
+    // replace all symbols
+    $str = str_remove_symbols($str);
+    // remove all double whitespaces
+    $str = str_remove_double_whitespace($str);
+    return explode(" ", $str);
+}
+
+function str_remove_double_whitespace(string $str): string
+{
+    while (str_contains($str, "  ") || str_contains($str, "\n") || str_contains($str, "\r")) {
+        $str = str_replace("  ", ' ', $str);
+        $str = str_replace("\n", ' ', $str);
+        $str = str_replace("\r", ' ', $str);
+    }
+    return $str;
+}
+
+function str_remove_symbols(string $str): string
+{
+    // array with synbols to replace
+    $symbols = array('.', ',', '!', '?', '-', '+', '=', '/', '\\', '*', '#', '@', '%', '$', '^', '&', '(', ')', '{', '}', '[', ']', ';', ':');
+    // replace
+    foreach ($symbols as $symb) {
+        $str = str_replace($symb, "", $str);
+    }
+    return  $str;
+}
+
+function out_wrapped(string $str, string $tag = 'span', string $class = 'focus', string $id = ''): void
+{
+    echo "<$tag class=\"$class\" id=\"$id\"> $str </$tag>";
 }
