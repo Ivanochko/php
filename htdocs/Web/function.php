@@ -255,9 +255,18 @@ function out_words_of_str(string $str): void
 function read_file($file): string
 {
     $file_text = '';
-    while (!feof($file)) {
+    while (!feof($file))
         $file_text .= fgets($file);
-    }
+
+    return $file_text;
+}
+
+function open_and_read_file(string $filename, string $filepath = ""): string
+{
+    $file = fopen($filepath . $filename, 'r');
+    // Read text from file
+    $file_text = read_file($file);
+    fclose($file);
     return $file_text;
 }
 

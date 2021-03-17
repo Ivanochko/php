@@ -16,8 +16,8 @@
             $tags = array();
             while (!feof($file)) {
                 $temp = fgets($file);
-                $temp = substr($temp, 0, strlen($temp) - 2);
-                $tags[$temp] = fgets($file);
+                $temp = explode("> ", str_replace("<", "", $temp));
+                $tags[$temp[0]] = $temp[1];
             }
             fclose($file);
 
@@ -29,7 +29,7 @@
                 else
                     echo "<tr class=\"even\">";
 
-                echo "<td>$count_tags.</td><td>" . str_replace("<", "&lt;", str_replace(">", "&gt;", $tag)) . "</td><td>$description</td></tr>";
+                echo "<td>$count_tags.</td><td>&lt;" . str_replace("<", "&lt;", $tag) . "&gt;</td><td>$description</td></tr>";
 
                 $count_tags++;
             }

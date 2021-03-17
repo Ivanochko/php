@@ -56,21 +56,26 @@ function task4()
 }
 function task5()
 {
-    
+    $file_text = open_and_read_file("files/ivanochko_text2.txt");
+    $paragraphs = explode("&new-inline;", $file_text);
+    $paragraph_to_out = rand(0, 4);
+    // out_array_with_index($paragraphs);
+    // echo $file_text;
+    out_wrapped($paragraphs[$paragraph_to_out], "p");
 }
 
-function open_and_read_file()
-{
-    $file = fopen("files/ivanochko_text.txt", 'r');
-    // Read text from file
-    $file_text = read_file($file);
-    fclose($file);
-    return $file_text;
-}
+// function open_and_read_file($filename)
+// {
+//     $file = fopen("files/ivanochko_text2.txt", 'r');
+//     // Read text from file
+//     $file_text = read_file($file);
+//     fclose($file);
+//     return $file_text;
+// }
 
 function start_task()
 {
-    $file_text = open_and_read_file();
+    $file_text = open_and_read_file("files/ivanochko_text.txt");
     // Out text from file
     out_wrapped("Readed text:");
     echo "<br>";

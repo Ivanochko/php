@@ -10,15 +10,11 @@ body {
     color: rgba(207, 207, 207, 0.842);
 }
 
-.theme-button {
-    background-image: url(../img/sun_white.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
+/* 
 .theme-button:hover {
     background-image: url(../img/sun_yellow.png);
-}
+} */
 
 .list-labs p:hover {
     text-shadow: 0 0 15px white;
@@ -140,4 +136,28 @@ hr {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #becac3;
+}
+
+.nav-elem:hover {
+    background: rgba(212, 212, 212, 0.151);
+}
+
+div.to-main {
+    background-image: url(../img/home_light.png);
+}
+
+.theme-button {
+    background-image: url(../img/sun_light.png);
+}
+
+div.mail-me {
+    background-image: url(../img/mail_light.png);
+}
+
+div.telegram-me {
+    background-image: url(../img/telegram_light.png);
+}
+
+div.my-git {
+    background-image: url(../img/github_light.png);
 }
