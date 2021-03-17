@@ -19,6 +19,7 @@
 
     <?php echo $questions[2]; ?>
     <select name="select" id="select-host">
+        <option value="null" selected>Select, please!</option>
         <option value="ezyro.com">ezyro.com</option>
         <option value="byethost33.com">byethost33.com</option>
         <option value="great-site.com">great-site.net</option>

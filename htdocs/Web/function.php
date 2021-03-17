@@ -95,7 +95,7 @@ function out_matrix(
         foreach ($i as $j) {
             echo '<td>' . $j . '</td>';
         }
-        echo '</tr>'; 
+        echo '</tr>';
     }
     echo '</table>' . '<br>';
 }
@@ -210,7 +210,7 @@ function out_foreach_tences($arr)
     }
 }
 
-function get_name($name)
+function get_name(string $name): string
 {
     $letters = preg_split('//u', $name, -1, PREG_SPLIT_NO_EMPTY);
     switch ($letters[count($letters) - 1]) {
@@ -231,7 +231,7 @@ function get_name($name)
             break;
     }
 }
-function swap_key_value_in_array(&$array)
+function swap_key_value_in_array(array &$array): void
 {
     $new = array();
     foreach ($array as $key => $value)
@@ -288,7 +288,7 @@ function str_remove_double_whitespace(string $str): string
         $str = str_replace("\n", ' ', $str);
         $str = str_replace("\r", ' ', $str);
     }
-    return $str;//
+    return $str;
 }
 
 function str_remove_symbols(string $str): string

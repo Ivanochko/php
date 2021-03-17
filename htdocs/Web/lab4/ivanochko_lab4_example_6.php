@@ -14,7 +14,7 @@
             <form action="ivanochko_lab4_example_6.php" method="post" class="form-example" id="form-task4_6">
                 Your first name: <input type="text" name="first-name" id="first-name" placeholder="first-name" required class="data-input"><br>
                 Your last name: <input type="text" name="last-name" id="last-name" placeholder="last-name" required class="data-input"><br>
-                Email: <input type="email" name="email" id="email" required placeholder="email" class="data-input"><br>
+                Email: <input type="email" name="email" id="email" required placeholder="email"class="data-input"><br>
                 Password: <input type="password" name="password" id="password" required class="data-input"> <br>
                 Repeat your password: <input type="password" name="password-repeat" id="password-repeat" required class="data-input"> <br>
                 <input type="reset" value="Reset form" id="reset-sub">
@@ -35,8 +35,8 @@
 
                     echo "<table class=\"table-datas-form table-generated-data\">";
                     echo "<tr class=\"table-header\">";
-
-                    foreach ($data as $key => $v) {
+                    
+                    foreach($data as $key => $v){
                         echo "<th>$key</th>";
                     }
                     echo "</tr>";

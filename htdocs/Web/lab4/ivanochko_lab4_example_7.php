@@ -24,6 +24,7 @@
                     && isset($_POST['alert-block'])
                     && isset($_POST['select'])
                     && isset($_POST['user-wish'])
+                    && $_POST['select'] != "null"
                 ) {
                     echo '<p>' . $questions[0] . "<br>";
                     echo "<span class=\"focus\">" . $_POST['block-host'] . "</span></p>";
