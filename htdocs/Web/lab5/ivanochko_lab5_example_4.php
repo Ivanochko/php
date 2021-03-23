@@ -27,7 +27,7 @@
                 else 
                     echo "<tr class=\"even\">";
 
-                echo "<td>&lt;$tag&gt;</td><td>$description</td></tr>";
+                echo "<td>&lt;$tag&gt;</td><td>$description.</td></tr>";
 
                 $index++;
             }

@@ -21,7 +21,7 @@
                     echo "Please enter value before submit!";
                 } else {
                     for ($i = 1; $i < $number + 1; $i++) {
-                        echo $i . " ^ 2 = " . ($i * $i) . ";<br>";
+                        echo $i . " ^ 2 = " . ($i * $i) . ";.<br>";
                     }
                 }
             }

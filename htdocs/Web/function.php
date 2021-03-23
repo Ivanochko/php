@@ -283,7 +283,7 @@ function str_get_words(string $str): array
 
 function str_remove_double_whitespace(string $str): string
 {
-    while (str_contains($str, "  ") || str_contains($str, "\n") || str_contains($str, "\r")) {
+    while (stripos($str, "  ") || stripos($str, "\n") || stripos($str, "\r")) {
         $str = str_replace("  ", ' ', $str);
         $str = str_replace("\n", ' ', $str);
         $str = str_replace("\r", ' ', $str);

@@ -1,11 +1,11 @@
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
     <?php require("../config.php") ?>
     <?php require("ivanochko_functions_lab5.php") ?>
     <script>
         $(document).ready(function() {
-            var showed = 5;
+            var showed = 0;
             for (let index = 0; index < 6; index++) {
                 if (index != showed)
                     $("#div5_6_task" + index).hide();
@@ -13,7 +13,10 @@
             $(".button5_6_task").click(function() {
                 $("#div5_6_task" + showed).hide();
                 let index = $(this).attr('id').slice(-1);
-                showed = index;
+                if (showed == index) {
+                    showed = 0;
+                } else
+                    showed = index;
                 $("#div5_6_task" + showed).show();
             });
 
@@ -25,11 +28,11 @@
     <div class="main">
         <h1 class="header">Завдання #6</h1>
         <div class="block-buttons-task">
-            <input type="button" value="Show task 1" class="button5_6_task" id="button5_6_task1">
-            <input type="button" value="Show task 2" class="button5_6_task" id="button5_6_task2">
-            <input type="button" value="Show task 3" class="button5_6_task" id="button5_6_task3">
-            <input type="button" value="Show task 4" class="button5_6_task" id="button5_6_task4">
-            <input type="button" value="Show task 5" class="button5_6_task" id="button5_6_task5">
+            <?php
+            for ($i = 1; $i < 6; $i++) {
+                echo "<input type=\"button\" value=\"Show task $i\" class=\"button5_6_task\" id=\"button5_6_task$i\">";
+            }
+            ?>
         </div>
         <div class="result" id="result5_6">
             <?php

@@ -27,7 +27,7 @@ function task2()
         if ($i == 3) break;
         echo "Слово";
         out_wrapped($word);
-        echo " кількість повторень - $c <br>";
+        echo " кількість повторень - $c. <br>";
         $i++;
     }
 }
@@ -50,28 +50,19 @@ function task3()
 function task4()
 {
     $arr = start_task();
-    foreach ($arr as $word)
-        if (str_starts_with($word, 'і')) 
+    foreach ($arr as $word) {
+        if (stripos($word, 'і') === 0)
             echo "$word<br>";
+    }
 }
 function task5()
 {
     $file_text = open_and_read_file("files/ivanochko_text2.txt");
     $paragraphs = explode("&new-inline;", $file_text);
     $paragraph_to_out = rand(0, 4);
-    // out_array_with_index($paragraphs);
-    // echo $file_text;
     out_wrapped($paragraphs[$paragraph_to_out], "p");
 }
 
-// function open_and_read_file($filename)
-// {
-//     $file = fopen("files/ivanochko_text2.txt", 'r');
-//     // Read text from file
-//     $file_text = read_file($file);
-//     fclose($file);
-//     return $file_text;
-// }
 
 function start_task()
 {

@@ -1,0 +1,32 @@
+<IfModule mod_expires.c>  
+
+ExpiresActive On  
+
+ExpiresByType application/javascript  "access plus 10 days"  
+
+ExpiresByType text/javascript  "access plus 10 days"  
+
+ExpiresByType text/css "access  plus 10 days"  
+
+ExpiresByType image/gif  "access plus 10 days"  
+
+ExpiresByType image/jpeg  "access plus 10 days"  
+
+ExpiresByType image/png  "access plus 10 days"  
+
+</IfModule>  
+
+<FilesMatch ".(pl|php|cgi|spl|scgi|fcgi)$">  
+
+Header unset Cache-Control  
+
+</FilesMatch>  
+
+DirectoryIndex index.php index.html index.htm index2.html
+
+ErrorDocument 400 https://infinityfree.net/errors/400/
+ErrorDocument 401 https://infinityfree.net/errors/401/
+ErrorDocument 403 https://infinityfree.net/errors/403/
+ErrorDocument 404 https://infinityfree.net/errors/404/
+ErrorDocument 500 https://infinityfree.net/errors/500/
+ErrorDocument 503 https://infinityfree.net/errors/503/
