@@ -4,17 +4,8 @@
     <?php require("../config.php") ?>
     <script>
         $(document).ready(function() {
-            var currentLocation = document.location.href;
             var showed = 0;
-            alert(currentLocation[-1]);
             
-            if(currentLocation[-1] == 0){
-            // if (currentLocation.endsWith("i=0")) {
-                // showed = 2;
-            // }else if(currentLocation.endsWith("i=1")){
-                showed = 3;
-            }
-
             for (let index = 0; index < 6; index++) {
                 if (index != showed)
                     $("#div6_5_task" + index).hide();
@@ -28,7 +19,6 @@
                     showed = index;
                 $("#div6_5_task" + showed).show();
             });
-            // alert(currentLocation);
         });
     </script>
     <?php
@@ -138,7 +128,7 @@
             }
 
             echo "<br>";
-            echo "<form action=\"ivanochko_lab6_example_5.php?i=0\" method=\"post\" class=\"form-example\">";
+            echo "<form action=\"ivanochko_lab6_example_5.php\" method=\"post\" class=\"form-example\">";
             echo "Будь ласка, введіть фрагмент для пошуку в тексті: <br>";
             echo "<input type=\"text\" class=\"input-text\" name=\"word-to-search\" required><br>";
             echo "<input type=\"submit\" value=\"Search!\" name=\"submit_c\">";
@@ -169,7 +159,7 @@
             }
 
             echo "<br>";
-            echo "<form action=\"ivanochko_lab6_example_5.php?i=1\" method=\"post\" class=\"form-example\">";
+            echo "<form action=\"ivanochko_lab6_example_5.php\" method=\"post\" class=\"form-example\">";
             echo "Будь ласка, введіть слово для пошуку в тексті: <br>";
             echo "<input type=\"text\" class=\"input-text\" name=\"word-to-search-d\" required><br>";
             echo "<input type=\"submit\" value=\"Search!\" name=\"submit_d\">";
