@@ -267,7 +267,7 @@ function open_and_read_file(string $filename, string $filepath = ""): string
     // Read text from file
     $file_text = read_file($file);
     fclose($file);
-    return $file_text;
+    return  str_replace(">", "&gt;", str_replace("<", '&lt;', $file_text));
 }
 
 function str_get_words(string $str): array
