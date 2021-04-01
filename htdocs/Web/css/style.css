@@ -287,6 +287,28 @@ input[type="reset"] {
     margin-top: 15px;
 }
 
+.created-table-product {
+    border-collapse: collapse;
+    margin: auto;
+    margin-bottom: 15px;
+    margin-top: 8px;
+}
+
+.created-table-product * {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+}
+
+.created-table-country {
+    margin-bottom: 15px;
+    margin-top: 8px;
+}
+
+.created-table-country * {
+    text-align: center;
+}
+
 .array-out {
     text-align: start;
     width: 300px;

@@ -306,3 +306,8 @@ function out_wrapped(string $str, string $tag = 'span', string $class = 'focus',
 {
     echo "<$tag class=\"$class\" id=\"$id\"> $str </$tag>";
 }
+
+function endl()
+{
+    echo "<br>";
+}
