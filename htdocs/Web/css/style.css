@@ -232,6 +232,15 @@ input[type="reset"] {
     /* overflow: hidden; */
 }
 
+#result6_2 {
+    max-width: 75%;
+}
+
+#result6_5 {
+    max-width: 75%;
+    max-height: 60%;
+}
+
 #reset-images {
     height: 40px;
     border-radius: 15px;
