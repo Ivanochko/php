@@ -309,6 +309,14 @@ input[type="reset"] {
     text-align: center;
 }
 
+.created-table-user * {
+    padding: 7px;
+}
+
+.created-table-user {
+    margin: auto;
+}
+
 .array-out {
     text-align: start;
     width: 300px;
