@@ -63,7 +63,7 @@
         <div class="block-buttons-task">
             <?php
             $tasks = array("a", "b", "c", "d");
-            for ($i = 0; $i < 4; $i++) {
+            for ($i = 0; $i < 3; $i++) {
                 echo "<input type=\"button\" value=\"Show task " . $tasks[$i] . "\" class=\"button6_5_task\" id=\"button6_5_task" . ($i + 1) . "\">";
             }
             ?>
@@ -132,37 +132,6 @@
             echo "Будь ласка, введіть фрагмент для пошуку в тексті: <br>";
             echo "<input type=\"text\" class=\"input-text\" name=\"word-to-search\" required><br>";
             echo "<input type=\"submit\" value=\"Search!\" name=\"submit_c\">";
-            echo "</form>";
-            echo "<br>";
-
-            echo "<hr class=\"horisontal6_5\">";
-            echo "</div>";
-            /////////////////////////////////////////////////////////////////////
-            echo "<div class=\"div6_5_task\" id=\"div6_5_task4\"> ";
-            echo "<hr class=\"horisontal6_5\">";
-            out_wrapped("Task d", "span", "focus task");
-            echo "<br>";
-
-            if (isset($_POST['submit_d'])) {
-
-                $fragment = $_POST['word-to-search-d'];
-
-                echo "<br>Слово для пошуку: ";
-                out_wrapped($fragment);
-
-                $pattern = "/\b" . $fragment . "\b/iu";
-                task($pattern, $text);
-
-                echo "<br><br>";
-                out_wrapped("Спробувати знову?");
-                echo "<br>";
-            }
-
-            echo "<br>";
-            echo "<form action=\"ivanochko_lab6_example_5.php\" method=\"post\" class=\"form-example\">";
-            echo "Будь ласка, введіть слово для пошуку в тексті: <br>";
-            echo "<input type=\"text\" class=\"input-text\" name=\"word-to-search-d\" required><br>";
-            echo "<input type=\"submit\" value=\"Search!\" name=\"submit_d\">";
             echo "</form>";
             echo "<br>";
 
