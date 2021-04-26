@@ -25,7 +25,7 @@
 
     function task(string $pattern, string $text)
     {
-        $sentences = preg_split("/[.!?] /", $text);
+        $sentences = preg_split("/[.!?][ \n]/mu", $text);
 
         $count = 0;
         $matches = array();
