@@ -11,7 +11,7 @@
         function __construct(
             string $name,
             string $capital,
-            float $population,
+            float $population
         ) {
             $this->name = $name;
             $this->capital = $capital;
@@ -26,7 +26,7 @@
             echo "<tr><th class=\"table-header\">Population</th><td>$this->population </td><td> milions people</td></tr>";
             echo "</table>";
         }
-    }
+     }
     ?>
 </head>
 
