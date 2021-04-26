@@ -53,7 +53,7 @@
             foreach ($numbers as $number) {
                 echo "<tr>";
                 for ($i = 0; $i < 10; $i++)
-                    if ($i != 0) 
+                    if ($i != 0)
                         echo "<td>" . $number->product()[$i] . "</td>";
                     else
                         echo "<th class=\"table-header\">$number->number</th>";
@@ -75,11 +75,11 @@
                 else
                     echo "<th></th>";
             echo "</tr>";
-   
+
             foreach ($numbers as $number) {
                 echo "<tr>";
                 for ($i = 0; $i < 10; $i++)
-                    if ($i != 0) 
+                    if ($i != 0)
                         echo "<td>" . $number->product_to_number($i) . "</td>";
                     else
                         echo "<th class=\"table-header\">$number->number</th>";
