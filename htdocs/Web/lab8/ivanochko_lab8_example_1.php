@@ -1,17 +1,17 @@
 <html>
 
 <head>
-    <?php require("../config.php") ?>
+    <?php require("../config.php");
+    require("../db.php"); ?>
+
 </head>
 
 <body>
     <div class="main">
         <h1 class="header">Завдання #1</h1>
-        <div class="result">
+        <div class="result" id="result8_1">
 
-            <?php
-
-            ?>
+            
         </div>
         <div class="list-labs">
             <p><a href="ivanochko_lab8.php">Назад</a></p>

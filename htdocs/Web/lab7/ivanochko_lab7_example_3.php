@@ -11,7 +11,7 @@
         function __construct(
             string $name,
             string $capital,
-            float $population,
+            float $population
         ) {
             $this->name = $name;
             $this->capital = $capital;
