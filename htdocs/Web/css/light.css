@@ -136,6 +136,11 @@ hr {
     background-color: black;
 }
 
+div.one-product:hover {
+    box-shadow: 0 0 18px black;
+    transition: all 1s;
+}
+
 
 /* Scrolbar chrome */
 

@@ -1,15 +1,18 @@
 <?php
-$db_name	= 'db';
-$db_host	= 'localhost';
-$db_user	= 'postgres';
-$db_pass	= 'postgres';
 
+function open_connection()
+{
+    $servername = "sql205.epizy.com";
+    $username = "epiz_28077250";
+    $password = "w8npFU9eokaY";
+    $database = "epiz_28077250_users";
+    $mysqli = mysqli_connect($servername, $username, $password, $database);
 
-$conection_string	= "host=$db_host dbname=$db_name user=$db_user password=$db_pass"; 
-//var_dump($conection_string);die();
-$dbconn = pg_connect($conection_string) or die ("DB error --> " . pg_last_error($dbconn)); 
-pg_query ($dbconn,"Set default_text_search_config='pg_catalog.ukrainian'");
+    if (!$mysqli) {
+        die("Connection failed: " . mysqli_connect_error());
+    }
+    echo "Connected successfully<br>";
+    return $mysqli;
+}
 
-#include_once("jquery.php");
-
-#echo "db.php";
+?>

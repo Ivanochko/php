@@ -9,7 +9,7 @@
         <div class="nav-back mail-me"><a target="_blank" href="mailto:vasa.ivanochko.17@gmail.com" class="mail-me nav-href"></a></div>
     </div>
     <div class="nav-elem">
-        <div class="nav-back telegram-me"><a target="_blank" href="" class="telegram-me nav-href"></a></div>
+        <div class="nav-back telegram-me"><a target="_blank" href="https://t.me/v_ivanochko" class="telegram-me nav-href"></a></div>
     </div>
     <div class="nav-elem">
         <div class="nav-back my-git"><a target="_blank" href="http://github.com/Ivanochko" class="my-git nav-href"></a></div>

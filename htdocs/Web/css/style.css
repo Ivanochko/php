@@ -99,7 +99,6 @@ input[type="number"] {
 input[type="submit"],
 input[type="button"],
 input[type="reset"] {
-    cursor: pointer;
     height: 40px;
     border-radius: 15px;
     background-repeat: repeat;
@@ -238,6 +237,12 @@ input[type="reset"] {
 
 #result6_5 {
     max-width: 75%;
+    max-height: 60%;
+}
+
+#result8_2 {
+    max-width: 75%;
+    min-width: 600px;
     max-height: 60%;
 }
 
