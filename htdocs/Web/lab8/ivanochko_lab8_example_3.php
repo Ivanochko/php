@@ -23,7 +23,6 @@
                 }else{
                     $("#buy-" + id).prop("disabled", false); 
                     $("#buy-" + id).removeClass("not-allowed-cursor");
-                    
                 }
             });
         });
