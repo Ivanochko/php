@@ -12,29 +12,23 @@
             <?php
             $mysqli = open_connection();
 
-            if (mysqli_query($mysqli, "DROP TABLE `Ivanochko_news`")) {
+            mysqli_query($mysqli, "DROP TABLE `Ivanochko_news`");
 
-                if (mysqli_query($mysqli, "CREATE TABLE `Ivanochko_news` (
-                    `id` int(11) NOT NULL,
+            mysqli_query($mysqli, "CREATE TABLE `Ivanochko_news` (
+                    `id` int NOT NULL AUTO_INCREMENT PRIMARY KEY,
                     `category` varchar(50) NOT NULL,
-                    `header` varchar(100) NOT NULL,
+                    `header` varchar(300) NOT NULL UNIQUE,
                     `content` text NOT NULL,
-                    `date` date NOT NULL
-                  ) ENGINE=MyISAM DEFAULT CHARSET=latin1;")) {
+                    `date` date NOT NULL,
+                    `photo` varchar(300) NULL
+                  ) ");
 
-                    if (mysqli_query($mysqli, "ALTER TABLE `Ivanochko_news`
-                                        ADD PRIMARY KEY (`id`),
-                                        ADD UNIQUE KEY `header` (`header`);")) {
 
-                        if (mysqli_query($mysqli, "ALTER TABLE `Ivanochko_news`
-                                MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-                                COMMIT;")) {
+            out_wrapped("Таблицю успішно створено!");
 
-                            out_wrapped("Таблицю успішно створено!");
-                        }
-                    }
-                }
-            }
+
+
+
 
 
             mysqli_close($mysqli);
