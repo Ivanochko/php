@@ -13,6 +13,8 @@
             $mysqli = open_connection();
 
             $text = str_replace("'", "\\'", open_and_read_file("ivanochko_news.txt", "", false));
+            $text = str_replace("\r", "", $text);
+            $text = str_replace("\n", "", $text);
 
             $rows = explode("  &", $text);
 
