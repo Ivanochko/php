@@ -1,31 +1,67 @@
 <html>
 
 <head>
-    <?php require("../config.php") ?>
+    <?php require("../config.php"); include_once("../db.php"); ?>
+    <link rel="stylesheet" href="../css/newspaper.css">
 </head>
 
 <body>
     <div class="main">
         <h1 class="header">Онлайн газета новин</h1>
         <div class="newspaper">
-            <div class="headers">
-            </div>
+            <?php
+            require("ivanochko_headers.php");
+            ?>
             <div class="main-news-list">
-                <div class="new">
-                    
-                </div>
-                <div class="new">
 
-                </div>
-                <div class="new">
+                <?php
+                $mysqli = open_connection();
+                $index = 0;
+                if ($result = mysqli_query($mysqli, "SELECT id, category, header, content, date FROM Ivanochko_news ORDER BY date DESC")) {
+                    while ($row = mysqli_fetch_assoc($result)) {
+                        $id = $row['id'];
+                        $category = $row['category'];
+                        $header = $row['header'];
+                        $content = $row['content'];
+                        $date = $row['date'];
+                        $type = "odd";
+                        
+                        if ($index % 2) {
+                            $type = "odd";
+                        }else {
+                            $type = "even";
+                        }
+                        $index++;
 
-                </div>
-                <div class="new">
+                        echo "<a class=\"new $type\" href=\"ivanochko_news.php?id=$id\">";
+                        echo "    <div class=\"elem-wrapper\">";
+                        echo "        <div class=\"new-description\">";
+                        echo "            <div class=\"news-category\">$category</div>";
+                        echo "            <div class=\"news-header\"><span>$header</span></div>";
+                        echo "            <div class=\"news-date\">$date</div>";
+                        echo "        </div>";
+                        echo "        <div class=\"content\">$content</div>";
+                        echo "    </div>";
+                        echo "</a>";
+                    }
+                }
+                mysqli_free_result($result);
 
-                </div>
-                <div class="new">
+                mysqli_close($mysqli);
+                ?>
 
-                </div>
+
+                <!-- <a class="new even" href="">
+                    <div class="elem-wrapper">
+                        <div class="new-description">
+                            <div class="news-category">$category</div>
+                            <div class="news-header"><span>$header</span></div>
+                            <div class="news-date">$date</div>
+                        </div>
+                        <div class="content">$content</div>
+                    </div>
+                </a> -->
+
             </div>
         </div>
 
