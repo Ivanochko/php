@@ -50,7 +50,7 @@
                             mysqli_free_result($result);
                             if ($result = mysqli_query($mysqli, "SELECT `id`, `header` FROM `Ivanochko_news` WHERE `category` = '$category' ORDER BY date DESC LIMIT 3")) {
                                 echo "<div class=\"block-of-news\">";
-                                echo "    <div class=\"header-of-block\"><a href=\"ivanochko_category_page?category=$category\">$category</a></div>";
+                                echo "    <div class=\"header-of-block\"><a href=\"ivanochko_category_page.php?category=$category\">$category</a></div>";
                                 echo "    <div class=\"first-three\">";
                                 echo "        <ul>";
                                 $i = 0;

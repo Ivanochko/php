@@ -48,20 +48,9 @@
                 mysqli_free_result($result);
 
                 mysqli_close($mysqli);
+
+                file_put_contents("output.txt", "All news in database = " . $index);
                 ?>
-
-
-                <!-- <a class="new even" href="">
-                    <div class="elem-wrapper">
-                        <div class="new-description">
-                            <div class="news-category">$category</div>
-                            <div class="news-header"><span>$header</span></div>
-                            <div class="news-date">$date</div>
-                        </div>
-                        <div class="content">$content</div>
-                    </div>
-                </a> -->
-
             </div>
         </div>
 
