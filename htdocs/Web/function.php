@@ -261,13 +261,17 @@ function read_file($file): string
     return $file_text;
 }
 
-function open_and_read_file(string $filename, string $filepath = ""): string
+function open_and_read_file(string $filename, string $filepath = "", $is_replace_tags = true): string
 {
     $file = fopen($filepath . $filename, 'r');
     // Read text from file
     $file_text = read_file($file);
     fclose($file);
-    return  str_replace(">", "&gt;", str_replace("<", '&lt;', $file_text));
+    if ($is_replace_tags) {
+        return  str_replace(">", "&gt;", str_replace("<", '&lt;', $file_text));
+    }else {
+        return $file_text;
+    }
 }
 
 function str_get_words(string $str): array
@@ -311,4 +315,3 @@ function endl()
 {
     echo "<br>";
 }
-

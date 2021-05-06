@@ -42,7 +42,8 @@ label.day-of-week:hover {
 
 input[type="submit"],
 input[type="button"],
-input[type="reset"] {
+input[type="reset"],
+button {
     background-color: rgb(56, 56, 56);
     background-image: url(../img/wood-2.jpg);
     color: white;
