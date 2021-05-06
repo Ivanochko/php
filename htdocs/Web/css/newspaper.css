@@ -254,3 +254,51 @@ div#fresh {
     font-size: 2.7vw;
     color: rgb(231, 193, 123);
 }
+
+form.form-to-add {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 95%;
+}
+
+form.form-to-add div.form-elem {
+    margin: auto;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+form.form-to-add div.form-elem span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    width: 30%;
+}
+
+form.form-to-add div.form-elem input,
+form.form-to-add div.form-elem textarea {
+    background-color: rgba(255, 255, 255, 0.325);
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30px;
+}
+
+span.identif {
+    font-size: 1.5vw;
+}
+
+form.delete {
+    width: 20%;
+}
+
+form.delete span {
+    font-size: 1.5vw;
+    margin: 8px;
+    font-family: "News content";
+}
