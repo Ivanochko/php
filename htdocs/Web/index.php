@@ -15,7 +15,9 @@
             <?php
             for ($i = 1; $i < 9; $i++) {
                 echo "<p><a href=\"lab$i/ivanochko_lab$i.php\">Лабораторна #$i</a></p>";
-            } ?>
+            } 
+                echo "<p><a href=\"lab9/ivanochko_main_page.php\">Лабораторна #9</a></p>";
+            ?>
         </div>
     </div>
 </body>
