@@ -1,0 +1,158 @@
+@font-face {
+    font-family: "Name product";
+    src: url("../fonts/for-fruits.ttf");
+}
+
+h1.header-shop-vegetables {
+    margin-top: -25px;
+}
+
+div.shop-page {
+    overflow: scroll;
+    width: 80%;
+    height: 72%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+div.products {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div.product {
+    width: 97%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 9px;
+    border-radius: 25px;
+    transition: all 0.7s;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/* 
+div.product {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+} */
+
+div.product:hover {
+    box-shadow: 0 0 18px white;
+    transition: all 1s;
+}
+
+div.number-product {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* justify-self: center; */
+    align-items: center;
+    font-size: 1.5vw;
+}
+
+div.number-product div.image {
+    width: 75%;
+    height: 100%;
+}
+
+div.number-product div.image img {
+    margin-top: 7.5%;
+    height: 85%;
+    box-shadow: 0 0 25px black;
+}
+
+div.name {
+    width: 20%;
+}
+
+div.name span {
+    font-size: 2.3vw;
+    font-family: "Name product";
+    letter-spacing: 6px;
+    width: 100%;
+}
+
+div.price {
+    font-size: 1.7vw;
+}
+
+form.action {
+    width: 15%;
+    font-size: 1.7vw;
+}
+
+form.action div.submit {
+    width: 100%;
+}
+
+form.action div.submit input {
+    width: 100%;
+}
+
+div.admin-actions {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 75px;
+    justify-content: space-around;
+}
+
+div.add,
+div.remove {
+    height: 100%;
+    width: 40%;
+}
+
+div.add a,
+div.remove a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(56, 56, 56);
+    background-image: url(../img/wood-2.jpg);
+    color: white;
+    box-shadow: inset 0 0 5px black, inset 0 0 10px black;
+    border-radius: 75px;
+    border-color: rgb(73, 63, 63);
+    font-size: 2.0vw;
+    font-weight: bold;
+}
+
+div.add a:hover,
+div.remove a:hover {
+    color: rgb(141, 126, 92);
+    text-shadow: 0 0 3px black;
+    text-decoration: underline;
+}
+
+div.regime-shop {
+    position: absolute;
+    right: 15;
+    top: 15;
+}
+
+div.authorize {
+    width: 85%;
+    height: 60%;
+    margin: auto;
+    border-radius: 20px;
+}

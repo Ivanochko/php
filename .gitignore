@@ -1,5 +1,6 @@
 *.txt
 *.zip
+*.docx
 ready/
 ### vscode ###
 .vscode/*
