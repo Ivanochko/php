@@ -476,3 +476,13 @@ div.nav-back {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.result-test {
+    width: 80%;
+    height: 70%;
+}
+
+.form-for-test {
+    width: 70%;
+    max-height: 60%;
+}

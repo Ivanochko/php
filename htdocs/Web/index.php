@@ -17,6 +17,7 @@
                 echo "<p><a href=\"lab$i/ivanochko_lab$i.php\">Лабораторна #$i</a></p>";
             } 
                 echo "<p><a href=\"lab9/ivanochko_main_page.php\">Лабораторна #9</a></p>";
+                echo "<p><a href=\"test/ivanochko_main_page.php\">Контрольна робота!</a></p>";
             ?>
         </div>
     </div>
